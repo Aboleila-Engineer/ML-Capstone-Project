@@ -58,22 +58,15 @@ Confusion matrix (test set): TN = 1718, FP = 347, FN = 322, TP = 1741.
 
 ## Repository Structure
 
-```
+```text
 ML-Capstone-Project/
-├── data/
-│   └── housing.csv
-├── notebooks/
-│   └── ML_Capstone_Project.ipynb
-├── results/
-│   ├── elbow_method.png
-│   ├── kmeans_clusters.png
-│   ├── target_distribution.png
-│   ├── correlation_heatmap.png
-│   ├── regression_actual_vs_predicted.png
-│   └── confusion_matrix.png
-├── README.md
+├── ML_Capstone_Project.ipynb
+├── housing.csv
+├── project_report_machine.pdf
+├── elbow_method.png
+├── kmeans_clusters.png
 ├── requirements.txt
-└── project_report_machine.pdf
+└── README.md
 ```
 
 ## How to Run
@@ -100,7 +93,7 @@ jupyter notebook ML_Capstone_Project.ipynb
 
 - Linear Regression explains ~62.5% of the variance; `median_income` is the strongest predictor.
 - Logistic Regression separates high- and low-value districts with ~84% accuracy and balanced errors.
-- K-Means found 5 regional groups (inland affordable, coastal, suburban, dense/new, Bay Area).
+- K-Means assigns the processed records to 5 clusters. Cluster labels are exploratory, not validated market segments.
 - Next steps: Random Forest / Gradient Boosting, feature engineering, PCA, cross-validation.
 
 ## Reproducibility note
